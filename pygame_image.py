@@ -14,6 +14,7 @@ def main():
     kk_img = pg.image.load("fig/3.png") #練習２前半
     kk_img = pg.transform.flip(kk_img, True, False) #練習２後半
     kk_rct = kk_img.get_rect() #練習10-1:こうかとんRectの抽出
+    kk_rct.center = 300, 200 #練習10-2:こうかとんRectの中心座標を指定
     tmr = 0
     while True:
         for event in pg.event.get():
