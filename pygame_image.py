@@ -23,16 +23,18 @@ def main():
             if event.type == pg.QUIT: return
         key_lst = pg.key.get_pressed() #練習10-3
 
+        y = -1
+        h = 0
         if key_lst[pg.K_UP]:
-            kk_rct.move_ip(0,-1) #練習10-4
+            h -=1 #練習10-4
         if key_lst[pg.K_DOWN]:
-            kk_rct.move_ip(0, +1) #練習10-4
+            h +=1 #練習10-4
         if key_lst[pg.K_LEFT]:
-            kk_rct.move_ip(-1, 0) #練習10-4
+            y -=1 #練習10-4
         if key_lst[pg.K_RIGHT]:
-            kk_rct.move_ip(2, 0) #練習10-4/演習1-2
-        else:
-            kk_rct.move_ip(-1,0) #演習1
+            y +=2 #練習10-4/演習1-2
+    
+        kk_rct.move_ip(y,h) #演習1
 
 
         #x = tmr%3200 #練習６
