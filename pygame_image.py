@@ -30,7 +30,7 @@ def main():
         if key_lst[pg.K_LEFT]:
             kk_rct.move_ip(-1, 0) #練習10-4
         if key_lst[pg.K_RIGHT]:
-            kk_rct.move_ip(+1, 0) #練習10-4
+            kk_rct.move_ip(2, 0) #練習10-4/演習1-2
         else:
             kk_rct.move_ip(-1,0) #演習1
 
