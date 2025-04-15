@@ -13,6 +13,7 @@ def main():
     bg_img2 = pg.transform.flip(bg_img, True, False) #練習8
     kk_img = pg.image.load("fig/3.png") #練習２前半
     kk_img = pg.transform.flip(kk_img, True, False) #練習２後半
+    kk_rct = kk_img.get_rect() #練習10-1:こうかとんRectの抽出
     tmr = 0
     while True:
         for event in pg.event.get():
